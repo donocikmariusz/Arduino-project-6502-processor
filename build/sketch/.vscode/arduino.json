@@ -1,0 +1,9 @@
+#line 1 "D:\\programy\\Visual Studio Code\\Arduino-project-6502-processor\\.vscode\\arduino.json"
+{
+    "sketch": "Arduino-project-6502-processor.ino",
+    "output": "build",
+    "configuration": "cpu=atmega2560",
+    "board": "arduino:avr:mega",
+    "programmer": "arduinoasisp",
+    "port": "COM5"
+}
