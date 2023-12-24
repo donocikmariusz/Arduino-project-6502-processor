@@ -8,11 +8,11 @@ for (int i = 0; i<16; i +=1) {
   pinMode(ADDR[i], 0x0);
 }
 pinMode(2, 0x0);
-attachInterrupt(((2) == 2 ? 0 : ((2) == 3 ? 1 : ((2) >= 18 && (2) <= 21 ? 23 - (2) : -1))), onClock, 3);
+attachInterrupt(digitalPintoInterrupt(2), onClock, 3);
 Serial.begin(57600);
 }
 
-void onClock() {
+void onClock {
 
 for (int i = 0; i < 16; i +=1 ) {
 int bit = digitalRead(ADDR[i]) ? 1 : 0;
